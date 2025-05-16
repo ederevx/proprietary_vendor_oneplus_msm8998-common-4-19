@@ -476,7 +476,6 @@ PRODUCT_PACKAGES += \
     libsdm-color \
     libsdm-colormgr-algo \
     libsdm-diag \
-    libsdmextension \
     libsecureui \
     libsecureui_svcsock \
     libsettings \
