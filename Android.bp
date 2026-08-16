@@ -11747,6 +11747,7 @@ cc_prebuilt_library_shared {
                 "libbinder",
                 "libutils",
                 "libdisplaydebug",
+                "libsdmdebugshim",
                 "libtinyxml2_1",
                 "libsdmutils",
                 "libc++",

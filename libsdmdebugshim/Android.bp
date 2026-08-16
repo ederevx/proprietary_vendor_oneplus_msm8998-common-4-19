@@ -1,0 +1,12 @@
+cc_library_shared {
+    name: "libsdmdebugshim",
+    vendor: true,
+    header_libs: ["display_headers"],
+    shared_libs: ["libsdmutils"],
+    cflags: [
+        "-Wall",
+        "-Werror",
+        "-fno-operator-names",
+    ],
+    srcs: ["sdm_debug_property_shim.cpp"],
+}
