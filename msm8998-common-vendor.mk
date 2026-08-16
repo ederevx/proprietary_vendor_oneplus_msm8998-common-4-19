@@ -373,6 +373,9 @@ PRODUCT_PACKAGES += \
     com.qualcomm.qti.uceservice@2.2 \
     com.qualcomm.qti.uceservice@2.3 \
     android.hardware.bluetooth@1.0-impl-qti \
+    btaudio_offload_if \
+    libbluetooth_audio_session_qti \
+    libbluetooth_audio_session_qti_2_1 \
     android.hardware.gnss@2.0-impl-qti \
     com.dsi.ant@1.0-impl \
     keystore.msm8998 \
@@ -475,6 +478,7 @@ PRODUCT_PACKAGES += \
     libsdm-color \
     libsdm-colormgr-algo \
     libsdm-diag \
+    libsdmextension \
     libsecureui \
     libsecureui_svcsock \
     libsettings \
