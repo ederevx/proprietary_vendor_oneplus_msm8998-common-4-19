@@ -1,0 +1,13 @@
+cc_library_shared {
+    name: "libdisplaydebug",
+    vendor: true,
+    shared_libs: ["libdl"],
+    cflags: [
+        "-DLOG_TAG=\"SDM\"",
+        "-Wall",
+        "-Werror",
+        "-fno-operator-names",
+    ],
+    export_include_dirs: ["."],
+    srcs: ["debug_handler.cpp"],
+}
