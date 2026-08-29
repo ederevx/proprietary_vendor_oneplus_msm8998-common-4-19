@@ -68,7 +68,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/msm8998-common/proprietary/vendor/etc/init/netmgrd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/netmgrd.rc \
     vendor/oneplus/msm8998-common/proprietary/vendor/etc/init/port-bridge.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/port-bridge.rc \
     vendor/oneplus/msm8998-common/proprietary/vendor/etc/init/qcrild.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qcrild.rc \
-    vendor/oneplus/msm8998-common/proprietary/vendor/etc/init/vendor.display.color@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.display.color@1.0-service.rc \
     vendor/oneplus/msm8998-common/proprietary/vendor/etc/init/vendor.oneplus.camera.CameraHIDL@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.oneplus.camera.CameraHIDL@1.0-service.rc \
     vendor/oneplus/msm8998-common/proprietary/vendor/etc/init/vendor.oneplus.hardware.drmkey@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.oneplus.hardware.drmkey@1.0-service.rc \
     vendor/oneplus/msm8998-common/proprietary/vendor/etc/init/vendor.oneplus.hardware.ifaa@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.oneplus.hardware.ifaa@2.0-service.rc \
@@ -169,7 +168,6 @@ PRODUCT_PACKAGES += \
     libqmi_csi \
     libqmi_encdec \
     libqmiservices \
-    libsdm-disp-vndapis \
     libsdsprpc \
     libseemore \
     libsensor1 \
@@ -422,7 +420,6 @@ PRODUCT_PACKAGES += \
     libconfigdb \
     libcpion \
     libdataitems \
-    libdisp-aba \
     libdpmqmihal \
     libdrmfs \
     libdrmtime \
@@ -432,7 +429,6 @@ PRODUCT_PACKAGES += \
     libgnss \
     libgps.utils \
     libhdcpsrm \
-    libhdr_tm \
     libizat_client_api \
     libizat_core \
     libjnihelper \
@@ -464,7 +460,6 @@ PRODUCT_PACKAGES += \
     libqdma_file_agent \
     libqisl \
     libqrtr \
-    libqseed3 \
     libqsocket \
     librcc \
     libril-qc-hal-qmi \
@@ -474,9 +469,6 @@ PRODUCT_PACKAGES += \
     libril-qcril-hook-oem \
     librilqmiservices \
     librpmb \
-    libsdm-color \
-    libsdm-diag \
-    libsdmextension \
     libsecureui \
     libsecureui_svcsock \
     libsettings \
@@ -489,7 +481,6 @@ PRODUCT_PACKAGES += \
     libsystem_health_mon \
     libthermalioctl \
     libtime_genoff \
-    libtinyxml2_1 \
     libtzdrmgenprov \
     libwms \
     libwvhidl \
@@ -498,10 +489,6 @@ PRODUCT_PACKAGES += \
     qcrild_librilutils \
     qtibus \
     qtimutex \
-    vendor.display.color@1.0 \
-    vendor.display.color@1.1 \
-    vendor.display.color@1.2 \
-    vendor.display.postproc@1.0 \
     vendor.oneplus.hardware.ifaa@2.0 \
     vendor.qti.data.factory@2.0 \
     vendor.qti.data.factory@2.1 \
@@ -576,20 +563,20 @@ PRODUCT_PACKAGES += \
     vendor.qti.imsrtpservice@3.0_vendor \
     vendor.qti.latency@2.0 \
     vendor.qti.latency@2.1 \
-    dirac_resource \
-    libadsp_fd_skel \
-    libadsp_hvx_add_constant \
-    libadsp_hvx_skel \
-    libapps_mem_heap \
-    libdirac-capiv2 \
-    libdspCV_skel \
-    libfastcvadsp \
-    libfastcvadsp_skel \
-    libscveBlobDescriptor_skel \
-    libscveObjectSegmentation_skel \
-    libsns_low_lat_stream_skel \
-    libvpp_frc \
-    libvpp_svc_skel \
+    vendor_lib_rfsa_adsp_dirac_resource_dar \
+    vendor_lib_rfsa_adsp_libadsp_fd_skel_so \
+    vendor_lib_rfsa_adsp_libadsp_hvx_add_constant_so \
+    vendor_lib_rfsa_adsp_libadsp_hvx_skel_so \
+    vendor_lib_rfsa_adsp_libapps_mem_heap_so \
+    vendor_lib_rfsa_adsp_libdirac-capiv2_so \
+    vendor_lib_rfsa_adsp_libdspCV_skel_so \
+    vendor_lib_rfsa_adsp_libfastcvadsp_so \
+    vendor_lib_rfsa_adsp_libfastcvadsp_skel_so \
+    vendor_lib_rfsa_adsp_libscveBlobDescriptor_skel_so \
+    vendor_lib_rfsa_adsp_libscveObjectSegmentation_skel_so \
+    vendor_lib_rfsa_adsp_libsns_low_lat_stream_skel_so \
+    vendor_lib_rfsa_adsp_libvpp_frc_so \
+    vendor_lib_rfsa_adsp_libvpp_svc_skel_so \
     com.qualcomm.qti.dpm.api@1.0 \
     lib-imscamera \
     lib-imsvideocodec \
@@ -633,7 +620,6 @@ PRODUCT_PACKAGES += \
     android.hardware.drm@1.2-service.widevine \
     android.hardware.gnss@2.0-service-qti \
     qcrild \
-    vendor.display.color@1.0-service \
     vendor.oneplus.camera.CameraHIDL@1.0-service \
     vendor.oneplus.hardware.drmkey@1.0-service \
     vendor.oneplus.hardware.ifaa@2.0-service \
@@ -652,7 +638,6 @@ PRODUCT_PACKAGES += \
     loc_launcher \
     lowi-server \
     mlid \
-    mm-pp-dpps \
     msm_irqbalance \
     netmgrd \
     pd-mapper \
