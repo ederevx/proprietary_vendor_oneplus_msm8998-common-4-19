@@ -119,19 +119,20 @@ PRODUCT_PACKAGES += \
     libEGL_adreno \
     libGLESv1_CM_adreno \
     libGLESv2_adreno \
-    libQTapGLES \
     libq3dtools_adreno \
     libq3dtools_esx \
     fp_hal_extension \
     gatekeeper.msm8998 \
     vendor.qti.hardware.sensorscalibrate@1.0-impl \
-    vulkan.msm8998 \
+    vulkan.adreno \
     libC2D2 \
+    libCB \
     libDeVIS \
     libEIS \
     libOGLManager \
     libOmxVpp \
     libOpenCL \
+    libVkLayer_q3dtools \
     libadreno_utils \
     libadsp_default_listener \
     libadsprpc \
@@ -144,9 +145,11 @@ PRODUCT_PACKAGES += \
     libfastcvadsp_stub \
     libfastcvopt \
     libfastrpc_utf_stub \
+    libgpudataproducer \
     libgsl \
     libidl \
     libllvm-glnext \
+    libllvm-qcom \
     libmdmdetect \
     libmdsprpc \
     libmmcamera2_frame_algorithm \
@@ -168,6 +171,7 @@ PRODUCT_PACKAGES += \
     libqmi_csi \
     libqmi_encdec \
     libqmiservices \
+    librs_adreno \
     libsdsprpc \
     libseemore \
     libsensor1 \
@@ -181,7 +185,6 @@ PRODUCT_PACKAGES += \
     sensors.ssc \
     vendor.qti.hardware.fingerprint@1.0 \
     vendor.qti.hardware.sensorscalibrate@1.0 \
-    libCB \
     libSonyIMX371RmscLibrary \
     libVDBlurlessAPI_v2 \
     libVDDualCameraBlurlessAPI \
@@ -274,7 +277,6 @@ PRODUCT_PACKAGES += \
     libjpegdhw \
     libjpegdmahw \
     libjpegehw \
-    libllvm-qcom \
     libmm-qcamera \
     libmmcamera2_c2d_module \
     libmmcamera2_cpp_module \
