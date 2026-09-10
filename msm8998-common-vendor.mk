@@ -485,6 +485,7 @@ PRODUCT_PACKAGES += \
     libtime_genoff \
     libtzdrmgenprov \
     libwms \
+    libwqe \
     libwvhidl \
     libxml \
     libxtadapter \

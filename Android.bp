@@ -11598,6 +11598,47 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libwqe",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libwqe.so",
+            ],
+            shared_libs: [
+                "libbinder",
+                "libcutils",
+                "libnetutils",
+                "libutils",
+                "liblog",
+                "libsqlite",
+                "libcneapiclient",
+                "libcne",
+                "libnl",
+                "libxml",
+                "libxml2",
+                "libandroid_net",
+                "libqti_vndfwk_detect",
+                "vendor.qti.hardware.data.cne.internal.server@1.0",
+                "vendor.qti.hardware.data.cne.internal.api@1.0",
+                "vendor.qti.hardware.mwqemadapter@1.0",
+                "libwpa_client",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libwvhidl",
     owner: "oneplus",
     strip: {
