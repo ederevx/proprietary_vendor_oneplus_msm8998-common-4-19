@@ -369,6 +369,8 @@ PRODUCT_PACKAGES += \
     libsmwrapper \
     libstblur_capture_api \
     libasphere \
+    libdiraceffect \
+    libdiracgefwrapper \
     com.qualcomm.qti.dpm.api@1.0_vendor \
     com.qualcomm.qti.imscmservice@2.0 \
     com.qualcomm.qti.imscmservice@2.1 \
