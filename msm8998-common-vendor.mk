@@ -140,7 +140,6 @@ PRODUCT_PACKAGES += \
     libadreno_utils \
     libadsp_default_listener \
     libadsprpc \
-    libbluetooth_audio_session \
     libbluetooth_audio_session_qti \
     libc2d30_bltlib \
     libcdsp_default_listener \
