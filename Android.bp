@@ -15,6 +15,61 @@ soong_namespace {
 }
 
 cc_prebuilt_library_shared {
+    name: "btaudio_offload_if",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/btaudio_offload_if.so",
+            ],
+            shared_libs: [
+                "libbase",
+                "libcutils",
+                "libfmq",
+                "libhidlbase",
+                "libhidltransport",
+                "liblog",
+                "libutils",
+                "android.hardware.bluetooth.audio@2.0",
+                "libbluetooth_audio_session",
+                "libbluetooth_audio_session_qti",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/btaudio_offload_if.so",
+            ],
+            shared_libs: [
+                "libbase",
+                "libcutils",
+                "libfmq",
+                "libhidlbase",
+                "libhidltransport",
+                "liblog",
+                "libutils",
+                "android.hardware.bluetooth.audio@2.0",
+                "libbluetooth_audio_session",
+                "libbluetooth_audio_session_qti",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "eglSubDriverAndroid",
     owner: "oneplus",
     strip: {
@@ -352,6 +407,58 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "audio.bluetooth_qti.default",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/hw/audio.bluetooth_qti.default.so",
+            ],
+            shared_libs: [
+                "libbluetooth_audio_session_qti",
+                "libbase",
+                "libcutils",
+                "libfmq",
+                "libhidlbase",
+                "libhidltransport",
+                "liblog",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/hw/audio.bluetooth_qti.default.so",
+            ],
+            shared_libs: [
+                "libbluetooth_audio_session_qti",
+                "libbase",
+                "libcutils",
+                "libfmq",
+                "libhidlbase",
+                "libhidltransport",
+                "liblog",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    relative_install_path: "hw",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "gatekeeper.msm8998",
     owner: "oneplus",
     strip: {
@@ -378,6 +485,62 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "liblog",
                 "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    relative_install_path: "hw",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.qti.hardware.bluetooth_audio@2.0-impl",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so",
+            ],
+            shared_libs: [
+                "android.hardware.audio.common@5.0",
+                "vendor.qti.hardware.bluetooth_audio@2.0",
+                "libbase",
+                "libbluetooth_audio_session_qti",
+                "libcutils",
+                "libfmq",
+                "libhidlbase",
+                "libhidltransport",
+                "liblog",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so",
+            ],
+            shared_libs: [
+                "android.hardware.audio.common@5.0",
+                "vendor.qti.hardware.bluetooth_audio@2.0",
+                "libbase",
+                "libbluetooth_audio_session_qti",
+                "libcutils",
+                "libfmq",
+                "libhidlbase",
+                "libhidltransport",
+                "liblog",
+                "libutils",
                 "libc++",
                 "libc",
                 "libm",
@@ -966,6 +1129,110 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "liblog",
                 "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libbluetooth_audio_session",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libbluetooth_audio_session.so",
+            ],
+            shared_libs: [
+                "android.hardware.bluetooth.audio@2.0",
+                "libbase",
+                "libcutils",
+                "libfmq",
+                "libhidlbase",
+                "libhidltransport",
+                "liblog",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libbluetooth_audio_session.so",
+            ],
+            shared_libs: [
+                "android.hardware.bluetooth.audio@2.0",
+                "libbase",
+                "libcutils",
+                "libfmq",
+                "libhidlbase",
+                "libhidltransport",
+                "liblog",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libbluetooth_audio_session_qti",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libbluetooth_audio_session_qti.so",
+            ],
+            shared_libs: [
+                "vendor.qti.hardware.bluetooth_audio@2.0",
+                "libaudioutils",
+                "libbase",
+                "libcutils",
+                "libfmq",
+                "libhidlbase",
+                "libhidltransport",
+                "liblog",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libbluetooth_audio_session_qti.so",
+            ],
+            shared_libs: [
+                "vendor.qti.hardware.bluetooth_audio@2.0",
+                "libaudioutils",
+                "libbase",
+                "libcutils",
+                "libfmq",
+                "libhidlbase",
+                "libhidltransport",
+                "liblog",
+                "libutils",
                 "libc++",
                 "libc",
                 "libm",
@@ -2971,6 +3238,53 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "vendor.qti.hardware.bluetooth_audio@2.0",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/vendor.qti.hardware.bluetooth_audio@2.0.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "libhidltransport",
+                "libhwbinder",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.qti.hardware.bluetooth_audio@2.0.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "libhidltransport",
+                "libhwbinder",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "vendor.qti.hardware.fingerprint@1.0",
     owner: "oneplus",
     strip: {
@@ -3060,6 +3374,71 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "com.qualcomm.qti.bluetooth_audio@1.0",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/com.qualcomm.qti.bluetooth_audio@1.0.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "libhidltransport",
+                "libhwbinder",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "android.hardware.bluetooth.audio@2.0-impl",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/hw/android.hardware.bluetooth.audio@2.0-impl.so",
+            ],
+            shared_libs: [
+                "android.hardware.audio.common@5.0",
+                "android.hardware.bluetooth.audio@2.0",
+                "libbase",
+                "libbluetooth_audio_session",
+                "libcutils",
+                "libfmq",
+                "libhidlbase",
+                "libhidltransport",
+                "liblog",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    relative_install_path: "hw",
     prefer: true,
     soc_specific: true,
 }
@@ -14412,6 +14791,24 @@ cc_prebuilt_library_shared {
 }
 
 prebuilt_rfsa {
+    name: "vendor_lib_rfsa_adsp_capi_v2_aptX_Classic_so",
+    filename: "capi_v2_aptX_Classic.so",
+    owner: "oneplus",
+    src: "proprietary/vendor/lib/rfsa/adsp/capi_v2_aptX_Classic.so",
+    relative_install_path: "adsp",
+    soc_specific: true,
+}
+
+prebuilt_rfsa {
+    name: "vendor_lib_rfsa_adsp_capi_v2_aptX_HD_so",
+    filename: "capi_v2_aptX_HD.so",
+    owner: "oneplus",
+    src: "proprietary/vendor/lib/rfsa/adsp/capi_v2_aptX_HD.so",
+    relative_install_path: "adsp",
+    soc_specific: true,
+}
+
+prebuilt_rfsa {
     name: "vendor_lib_rfsa_adsp_dirac_resource_dar",
     filename: "dirac_resource.dar",
     owner: "oneplus",
@@ -14535,6 +14932,50 @@ prebuilt_rfsa {
     src: "proprietary/vendor/lib/rfsa/adsp/libvpp_svc_skel.so",
     relative_install_path: "adsp",
     soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libaptXHD_encoder",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/product/lib64/libaptXHD_encoder.so",
+            ],
+            shared_libs: [
+                "libdl",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    product_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libaptX_encoder",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/product/lib64/libaptX_encoder.so",
+            ],
+            shared_libs: [
+                "libdl",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    product_specific: true,
 }
 
 cc_prebuilt_library_shared {
