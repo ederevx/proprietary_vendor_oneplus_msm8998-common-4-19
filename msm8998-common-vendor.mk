@@ -190,7 +190,6 @@ PRODUCT_PACKAGES += \
     libvpplibrary \
     sensor_calibrate \
     sensors.ssc \
-    vendor.qti.hardware.bluetooth_audio@2.0 \
     vendor.qti.hardware.fingerprint@1.0 \
     vendor.qti.hardware.sensorscalibrate@1.0 \
     com.qualcomm.qti.bluetooth_audio@1.0 \
