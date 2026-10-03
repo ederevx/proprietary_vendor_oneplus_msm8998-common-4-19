@@ -116,6 +116,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/msm8998-common/proprietary/vendor/radio/qcril_database/upgrade/9_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/9_version_update_ecc_table.sql
 
 PRODUCT_PACKAGES += \
+    btaudio_offload_if \
     eglSubDriverAndroid \
     libEGL_adreno \
     libGLESv1_CM_adreno \
@@ -123,7 +124,9 @@ PRODUCT_PACKAGES += \
     libq3dtools_adreno \
     libq3dtools_esx \
     fp_hal_extension \
+    audio.bluetooth_qti.default \
     gatekeeper.msm8998 \
+    vendor.qti.hardware.bluetooth_audio@2.0-impl \
     vendor.qti.hardware.sensorscalibrate@1.0-impl \
     vulkan.adreno \
     libC2D2 \
@@ -137,6 +140,7 @@ PRODUCT_PACKAGES += \
     libadreno_utils \
     libadsp_default_listener \
     libadsprpc \
+    libbluetooth_audio_session_qti \
     libc2d30_bltlib \
     libcdsp_default_listener \
     libcdsprpc \
@@ -187,6 +191,8 @@ PRODUCT_PACKAGES += \
     sensors.ssc \
     vendor.qti.hardware.fingerprint@1.0 \
     vendor.qti.hardware.sensorscalibrate@1.0 \
+    com.qualcomm.qti.bluetooth_audio@1.0 \
+    android.hardware.bluetooth.audio@2.0-impl \
     libSonyIMX371RmscLibrary \
     libVDBlurlessAPI_v2 \
     libVDDualCameraBlurlessAPI \
@@ -579,6 +585,8 @@ PRODUCT_PACKAGES += \
     vendor.qti.imsrtpservice@3.0_vendor \
     vendor.qti.latency@2.0 \
     vendor.qti.latency@2.1 \
+    vendor_lib_rfsa_adsp_capi_v2_aptX_Classic_so \
+    vendor_lib_rfsa_adsp_capi_v2_aptX_HD_so \
     vendor_lib_rfsa_adsp_dirac_resource_dar \
     vendor_lib_rfsa_adsp_libadsp_fd_skel_so \
     vendor_lib_rfsa_adsp_libadsp_hvx_add_constant_so \
@@ -593,6 +601,8 @@ PRODUCT_PACKAGES += \
     vendor_lib_rfsa_adsp_libsns_low_lat_stream_skel_so \
     vendor_lib_rfsa_adsp_libvpp_frc_so \
     vendor_lib_rfsa_adsp_libvpp_svc_skel_so \
+    libaptXHD_encoder \
+    libaptX_encoder \
     com.qualcomm.qti.dpm.api@1.0 \
     lib-imscamera \
     lib-imsvideocodec \
