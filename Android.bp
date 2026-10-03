@@ -409,6 +409,9 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "audio.bluetooth_qti.default",
     stem: "audio.bluetooth_qti.legacy",
+    // The A10 blob's DT_SONAME stays audio.bluetooth_qti.default.so; the file
+    // is installed under the private legacy name the device shim dlopens.
+    check_elf_files: false,
     owner: "oneplus",
     strip: {
         none: true,
