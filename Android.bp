@@ -408,6 +408,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "audio.bluetooth_qti.default",
+    stem: "audio.bluetooth_qti.legacy",
     owner: "oneplus",
     strip: {
         none: true,
