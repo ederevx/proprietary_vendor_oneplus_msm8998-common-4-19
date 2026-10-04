@@ -16958,3 +16958,37 @@ cc_library_shared {
     compile_multilib: "32",
     soc_specific: true,
 }
+
+//
+// Hand-maintained addition (not produced by extract-files.py).
+// Imported from an SDM660 device vendor tree; the OnePlus stock dump does not
+// ship this library. 32-bit only -- no lib64 build of libvqzip exists.
+// Needed so libOmxVenc's dlopen("libvqzip.so") succeeds for the _VQZIP_ path
+// that is enabled for target_board_platform=msm8998.
+//
+cc_prebuilt_library_shared {
+    name: "libvqzip",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libvqzip.so",
+            ],
+            shared_libs: [
+                "libutils",
+                "libcutils",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
