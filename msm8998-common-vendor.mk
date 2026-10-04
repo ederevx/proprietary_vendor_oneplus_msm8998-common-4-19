@@ -384,6 +384,7 @@ PRODUCT_PACKAGES += \
     com.qualcomm.qti.uceservice@2.2 \
     com.qualcomm.qti.uceservice@2.3 \
     android.hardware.bluetooth@1.0-impl-qti \
+    bt_hci_translate \
     android.hardware.gnss@2.0-impl-qti \
     com.dsi.ant@1.0-impl \
     keystore.msm8998 \
