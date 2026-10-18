@@ -68,7 +68,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/msm8998-common/proprietary/vendor/etc/init/netmgrd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/netmgrd.rc \
     vendor/oneplus/msm8998-common/proprietary/vendor/etc/init/port-bridge.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/port-bridge.rc \
     vendor/oneplus/msm8998-common/proprietary/vendor/etc/init/qcrild.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qcrild.rc \
-    vendor/oneplus/msm8998-common/proprietary/vendor/etc/init/vendor.display.color@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.display.color@1.0-service.rc \
     vendor/oneplus/msm8998-common/proprietary/vendor/etc/init/vendor.oneplus.camera.CameraHIDL@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.oneplus.camera.CameraHIDL@1.0-service.rc \
     vendor/oneplus/msm8998-common/proprietary/vendor/etc/init/vendor.oneplus.hardware.drmkey@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.oneplus.hardware.drmkey@1.0-service.rc \
     vendor/oneplus/msm8998-common/proprietary/vendor/etc/init/vendor.oneplus.hardware.ifaa@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.oneplus.hardware.ifaa@2.0-service.rc \
@@ -173,7 +172,6 @@ PRODUCT_PACKAGES += \
     libqmi_encdec \
     libqmiservices \
     librs_adreno \
-    libsdm-disp-vndapis \
     libsdsprpc \
     libseemore \
     libsensor1 \
@@ -368,6 +366,7 @@ PRODUCT_PACKAGES += \
     libqtigef \
     libsmwrapper \
     libstblur_capture_api \
+    libvqzip \
     libasphere \
     com.qualcomm.qti.dpm.api@1.0_vendor \
     com.qualcomm.qti.imscmservice@2.0 \
@@ -434,7 +433,6 @@ PRODUCT_PACKAGES += \
     libgnss \
     libgps.utils \
     libhdcpsrm \
-    libhdr_tm \
     libizat_client_api \
     libizat_core \
     libjnihelper \
@@ -476,9 +474,6 @@ PRODUCT_PACKAGES += \
     libril-qcril-hook-oem \
     librilqmiservices \
     librpmb \
-    libsdm-color \
-    libsdm-diag \
-    libsdmextension \
     libsecureui \
     libsecureui_svcsock \
     libsettings \
@@ -501,10 +496,6 @@ PRODUCT_PACKAGES += \
     qcrild_librilutils \
     qtibus \
     qtimutex \
-    vendor.display.color@1.0 \
-    vendor.display.color@1.1 \
-    vendor.display.color@1.2 \
-    vendor.display.postproc@1.0 \
     vendor.oneplus.hardware.ifaa@2.0 \
     vendor.qti.data.factory@2.0 \
     vendor.qti.data.factory@2.1 \
@@ -636,7 +627,6 @@ PRODUCT_PACKAGES += \
     android.hardware.drm@1.2-service.widevine \
     android.hardware.gnss@2.0-service-qti \
     qcrild \
-    vendor.display.color@1.0-service \
     vendor.oneplus.camera.CameraHIDL@1.0-service \
     vendor.oneplus.hardware.drmkey@1.0-service \
     vendor.oneplus.hardware.ifaa@2.0-service \
@@ -655,7 +645,6 @@ PRODUCT_PACKAGES += \
     loc_launcher \
     lowi-server \
     mlid \
-    mm-pp-dpps \
     msm_irqbalance \
     netmgrd \
     pd-mapper \
