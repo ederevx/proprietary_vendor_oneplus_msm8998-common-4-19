@@ -84,7 +84,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/msm8998-common/proprietary/vendor/etc/permissions/com.fingerprints.extension.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.fingerprints.extension.xml \
     vendor/oneplus/msm8998-common/proprietary/vendor/etc/seccomp_policy/imsrtp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/imsrtp.policy \
     vendor/oneplus/msm8998-common/proprietary/vendor/etc/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf \
-    vendor/oneplus/msm8998-common/proprietary/vendor/etc/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf \
     vendor/oneplus/msm8998-common/proprietary/vendor/firmware/a530_pfp.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a530_pfp.fw \
     vendor/oneplus/msm8998-common/proprietary/vendor/firmware/a530_pm4.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a530_pm4.fw \
     vendor/oneplus/msm8998-common/proprietary/vendor/firmware/a540_gpmu.fw2:$(TARGET_COPY_OUT_VENDOR)/firmware/a540_gpmu.fw2 \
@@ -180,7 +179,6 @@ PRODUCT_PACKAGES += \
     libsensor_reg \
     libsns_low_lat_stream_stub \
     libssc_default_listener \
-    libthermalclient \
     libvpphvx \
     libvpplibrary \
     sensor_calibrate \
@@ -489,7 +487,6 @@ PRODUCT_PACKAGES += \
     libssd \
     libsynergy_loc_api \
     libsystem_health_mon \
-    libthermalioctl \
     libtime_genoff \
     libtinyxml2_1 \
     libtzdrmgenprov \
@@ -672,7 +669,6 @@ PRODUCT_PACKAGES += \
     sensors.qti \
     slim_daemon \
     tftp_server \
-    thermal-engine \
     time_daemon \
     xtra-daemon \
     dpmd
